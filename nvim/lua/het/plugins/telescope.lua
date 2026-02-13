@@ -33,6 +33,9 @@ return {
             ["<C-t>"] = trouble_telescope.open,
           },
         },
+        preview = {
+          treesitter = false,
+        },
       },
     })
 
@@ -49,4 +52,3 @@ return {
     keymap.set("n", "<leader>fk", "<cmd>Telescope keymaps<cr>", { desc = "Find todos" })
   end,
 }
-
